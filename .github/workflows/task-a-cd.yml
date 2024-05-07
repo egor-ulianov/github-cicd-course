@@ -18,4 +18,4 @@ jobs:
             source venv/bin/activate
             pip install -r ./task_a/requirements.txt
         - name: Run tests for task_a
-          run: python3 pytest task_a.py
+          run: pytest ./task_a/task_a.py
