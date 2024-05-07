@@ -13,7 +13,7 @@ jobs:
           with:
             python-version: '3.11'
             cache: 'pip'
-        - name: Install dependencies
+        - name: Install dependencies with cache
           run: |
             pip install -r ./task_a/requirements.txt
         - name: Run tests for task_a
