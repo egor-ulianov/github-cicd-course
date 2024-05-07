@@ -14,5 +14,9 @@ jobs:
             python-version: '3.11'
         - name: Install dependencies
           run: |
+            python3 -m venv venv
+            source venv/bin/activate
             pip install -r ./task_a/requirements.txt
-        # TODO: run pytest
+        - name: Run tests
+          run: |
+            pytest task_a.py
